@@ -1,17 +1,39 @@
 const express = require('express');
 const router = express.Router();
+const request = require('request');
+const jwt = require('jsonwebtoken');
+const User = require('../models/User');
 
 router.get('/' ,(req, res) => {
-    let cookies = req.cookies.auth
+    let cookies = req.cookies.auth;
     // console.log(typeof cookies)
     if(cookies == null || cookies == undefined) {
         res.render('login', {
             message: 'You are not authorised, login'
         })
     } else {
-        res.render('education/books', {
-            title: 'Education'
+        let url = 'http://cooldashapi.herokuapp.com/education/course/search/';
+        console.log(cookies);
+        let logged_in_data = jwt.verify(cookies, 'cooldash');
+        let user_email = logged_in_data.email;
+        let user = {};
+        User.findOne({email: user_email}, 'firstname lastname', (err, res_user)=>{
+            user.firstname = res_user.firstname;
+            user.lastname = res_user.lastname;
         });
+
+        console.log(user);
+        request({
+            url: url,
+            json: true
+        }, (error, response, body)=>{
+            res.render('education/books', {
+                title: 'Education',
+                body: body,
+                user:user
+            });
+        });
+
     }
 
 });
@@ -22,9 +44,10 @@ router.get('/past_question', (req, res) => {
 });
 
 router.get('/books', (req, res) => {
-    res.render('education/books')
+
+    res.redirect('/education/')
     // res.send('iwe ogba !!!');
-})
+});
 
 router.get('/tutorial_videos', (req, res) => {
     res.render('education/videos');

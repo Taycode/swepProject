@@ -1,7 +1,7 @@
 <div class="sidenav">
    <div class="image text-center mb-5">
       <img src="/images/img_avatar.png" width="100px" />
-      <h5>Chukwuma Ciroma</h5>
+       <h5>{{user.firstname}} {{user.lastname}}</h5>
    </div>
    <div class="navcontent active">
       <a href="/education/books">
@@ -47,99 +47,101 @@
       <p class="lead">Knowledge is power, fuck this shit</p>
    </div>
    <div class="row gallery">
+       {{#each body}}
       <div class="col-md-4 textbook">
          <a href="/education/books/CPE311">
             <div class="textbook_container">
                <div class="textbook_body">
-                  <h2>CPE311</h2>
-                  <p>Introduction to Information <br>systems</p>
+                  <h2>{{course_code}}</h2>
+                  <p> {{course_title}}</p>
                </div>
             </div>
          </a>
       </div>
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CPE301">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CPE301</h2>
-                  <p>Low level languages</p>
-               </div>
-            </div>
-         </a>
-      </div>
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CSC305">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CSC305</h2>
-                  <p>Introduction to Database <br> Systems</p>
-               </div>
-            </div>
-         </a>
-      </div>
+       {{/each}}
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CPE301">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CPE301</h2>-->
+<!--                  <p>Low level languages</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CSC305">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CSC305</h2>-->
+<!--                  <p>Introduction to Database <br> Systems</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
    </div>
-   <div class="row gallery">
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CSC307">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CSC307</h2>
-                  <p>Numerical Computation I</p>
-               </div>
-            </div>
-         </a>
-      </div>
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CSC315">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CSC315</h2>
-                  <p>Data Structure & Analysis <br> of Algorithms</p>
-               </div>
-            </div>
-         </a>
-      </div>
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CSC317">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CSC317</h2>
-                  <p>Automata Theory and <br>Computability</p>
-               </div>
-            </div>
-         </a>
-      </div>
-   </div>
-   <div class="row gallery">
-      <div class="col-md-4 textbook">
-         <a href="/education/books/MTH301">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>MTH301</h2>
-                  <p>Mathematical Methods III</p>
-               </div>
-            </div>
-         </a>
-      </div>
-      <!-- <div class="col-md-4 textbook">
-         <a href="/education/books/MTH306">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>MTH306</h2>
-                  <p>Groups and Rings</p>
-               </div>
-            </div>
-         </a>
-      </div>
-      <div class="col-md-4 textbook">
-         <a href="/education/books/CPE309">
-            <div class="textbook_container">
-               <div class="textbook_body">
-                  <h2>CPE309</h2>
-                  <p>Computer Engineering <br> Lab I</p>
-               </div>
-            </div>
-         </a>
-      </div> -->
-   </div>
+<!--   <div class="row gallery">-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CSC307">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CSC307</h2>-->
+<!--                  <p>Numerical Computation I</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CSC315">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CSC315</h2>-->
+<!--                  <p>Data Structure & Analysis <br> of Algorithms</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CSC317">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CSC317</h2>-->
+<!--                  <p>Automata Theory and <br>Computability</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--   <div class="row gallery">-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/MTH301">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>MTH301</h2>-->
+<!--                  <p>Mathematical Methods III</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/MTH306">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>MTH306</h2>-->
+<!--                  <p>Groups and Rings</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 textbook">-->
+<!--         <a href="/education/books/CPE309">-->
+<!--            <div class="textbook_container">-->
+<!--               <div class="textbook_body">-->
+<!--                  <h2>CPE309</h2>-->
+<!--                  <p>Computer Engineering <br> Lab I</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </a>-->
+<!--      </div> &ndash;&gt;-->
+<!--   </div>-->
 </div>
