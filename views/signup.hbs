@@ -1,0 +1,99 @@
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="signup_content col-md-6">
+      <div class="signup_parent" style=" margin-bottom: 0px; height: 390px;">
+        <h2 class="signup_header">Sign up</h2>
+        <div class="signup_children">
+          <p class="signup_body">
+            Cool Dash is much better when you have an account <br>
+            Get one under a minute
+          </p>
+        </div>
+        <div class="signup_image">
+          <img src="/images/Logo.svg" alt="logo" width="100px;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container form_container mx-auto" style="height: 469px;">
+        <h5 class="text-danger text-center">{{ message }}</h5>
+        <form action="" method="post">
+          <div class="form-group">
+            <input type="text" name="firstname" id="firstname" placeholder="Firstname" value="{{firstname}}"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="lastname" id="lastname" placeholder="Lastname" value="{{lastname}}"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Email" value="{{email}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" id="password" Placeholder="Password" class="form-control">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="terms" id="terms" class="form-check-input">
+            <label for="terms" class="form-check-label">By signing up I agree with the <a href="/terms">Terms and
+                Conditions</a></label>
+          </div>
+          <button type="submit" class="btn btn-sm signup_btn">Sign up</button>
+        </form>
+      </div>
+      <div class="text-center">
+        <a href="/login" class="redirect text-center mt-4"> Already have an account Login ?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{{!-- <div class="container-fluid h-100">
+  <div class="row">
+    <div class="col-6 signup">
+      <div class="container">
+        <div class="signup_box">
+          <div class="signup">
+            <h2>Sign up</h2>
+          </div>
+          <div class="signup_content">
+            <p>Cool Dash is much better when you have an account</p>
+            <p>Get one under a minute</p>
+          </div>
+          <div class="cooldash-img">
+            <img src="/images/Logo.svg" alt="logo" width="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="container form-container">
+        <div class="form">
+          <form action="" method="post">
+            <div class="form-group">
+              <input type="text" name="firstname" id="firstname" placeholder="Firstname" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="lastname" id="lastname" placeholder="Lastname" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" id="password"  Placeholder="Password" class="form-control">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="terms" id="terms"  class="form-check-input">
+              <label for="terms" class="form-check-label">By signing up I agree with the <a href="/terms">Terms and Conditions</a></label>
+            </div>
+            <button type="submit" class="btn form-control">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> --}}

@@ -1,0 +1,142 @@
+/* NEW CSS */
+/* .clip-element {
+   height: 300px;
+   clip-path: url(#myCurve);
+   background-color: #74e6ef;
+} */
+
+/* Header */
+
+
+
+/* .login a {
+    color: #ffffff;
+    background: linear-gradient(45deg, #232d65, #6486fd);
+    font-size: 20px;
+    border: 1px solid #6377d4;
+    border-radius: 4px;
+  }
+  
+  .login a:hover {
+    color: #74e6ef;
+  } */
+
+.regis {
+  padding: 15px 35px;
+  border: 1px solid #000;
+  top: 8px;
+  position: relative;
+}
+
+.navbar ul a {
+  color: #000;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+
+.navbar {
+  margin-top: 20px;
+}
+
+
+.act {
+  color: #283066 !important;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+
+/* Intro section */
+.intro {
+  margin: 50px 0px 80px;
+  font-family: 'Circular std Bold';
+  width: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro-1 {
+  width: 35%;
+}
+
+.intro-2 {
+  width: 50%;
+  padding: 0 40px 0 0;
+}
+
+.intro h2 {
+  color: #232d66;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.intro p {
+  color: #2f2f2f;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+/* SIGNUP FORM */
+.signup {
+  background-color: #74e6ef;
+}
+
+.check-box {
+  display: block;
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.check-box input {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.signup .container {
+  color: #fff;
+  padding: 80px;
+}
+
+.cooldash-img {
+  margin-top: 100px;
+}
+
+.form-container {
+  padding: 60px 150px;
+}
+
+.form-group .form-control {
+  border-bottom: 2px solid #3534a7;
+  background-color: #eaeaf9;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-check-label {
+  color: #3534a7;
+}
+
+button.form-control {
+  background-color: #3534a7;
+  color: #74e6ef;
+}
+
+.form-check {
+  margin-top: 40px;
+}
+
+.signup_box {
+  margin-top: 90px;
+}
+
+.login-container {
+  height: 100vh;
+}

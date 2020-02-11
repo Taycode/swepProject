@@ -1,0 +1,54 @@
+.sidenav {
+    height: 100%;
+    width: 26%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 20px;
+    box-shadow: 0px -17px 3px #888888
+ }
+ .container{
+    padding: 20px 0 0 0;
+ }
+.navcontent a {
+    color: #232d67;
+ }
+      
+.navcontent a:hover {
+     text-decoration: none;
+ }
+      
+.main {
+    margin-left: 15%;
+    padding: 70px;
+ }
+ .heading{
+     margin-left: 20px;
+     padding-left: 20px;
+ }
+.image img {
+    border-radius: 50%;
+ }
+ .logout {
+    position: absolute;
+    bottom: 0;
+ }
+ .active {
+    border-left: 8px solid #232d67;
+ }
+ .heading{
+     text-align: center;
+ }
+ .book{
+    height: 200px;
+    box-shadow: 0 0 2px 1px #888888;
+ }
+ .gallery {
+    margin-bottom: 20px;
+ }
+ .images{
+    text-align: center;
+ }
+ 

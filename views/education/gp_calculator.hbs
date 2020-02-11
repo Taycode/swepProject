@@ -1,0 +1,171 @@
+<div class="sidenav">
+    <div class="image text-center mb-5">
+        <img src="/images/img_avatar.png" width="100px" />
+        <h5>Chukwuma Ciroma</h5>
+    </div>
+    <div class="navcontent inactive">
+        <a href="/education/books">
+            <img src="/images/documents.png" width="40px">
+            <span class="ml-2">Books</span>
+        </a>
+    </div>
+    <div class="navcontent inactive">
+        <a href="/education/tutorial_video">
+            <img src="/images/video-camera.png" width="40px">
+            <span class="ml-2">Videos</span>
+        </a>
+    </div>
+    <div class="navcontent inactive">
+        <a href="/education/past_question">
+            <img src="/images/files-and-folders.png" width="40px">
+            <span class="ml-2">PQ & Course Outline</span>
+        </a>
+    </div>
+    <div class="navcontent active">
+        <a href="/education/gp_calculator">
+            <img src="/images/maths.svg" width="40px">
+            <span class="ml-2">GP Calculator</span>
+        </a>
+    </div>
+    <div class="navcontent inactive">
+        <a href="/education/forum">
+            <img src="/images/dialogue.svg" width="40px">
+            <span class="ml-2">Online Group Forum</span>
+        </a>
+    </div>
+    <div class="navcontent inactive logout">
+        <a href="/dashboard/logout">
+            <img src="/images/log-out.svg" width="40px">
+            <span class="ml-2">Logout</span>
+        </a>
+    </div>
+</div>
+
+<div class="main">
+
+    <h1 class="text-center" style="">Calculation of GPA</h1>
+
+    <div class="result mx-auto justify-content-center">
+        <form action="" id="gpForm">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-inline-group">
+                       <label for="course">COURSE CODE: </label>
+                       <input type="text" id="courseCode" name="course" placeholder="Enter Course Code">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-inline-group">
+                        <label for="unit">Unit: </label>
+                        <input type="number" name="course" id="courseUnit" placeholder="Unit">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-inine-group">
+                        <label for="score">Score: </label>
+                        <input type="number" name="score" id="grade" placeholder="Your score">
+                    </div>
+                </div>
+                <button type="button" name="submit" id="add_to_course_list" style="height: 30px; margin-top: 30px;"
+                onclick="add()"><i class="fa fa-plus"></i></button>
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Course Code</th>
+                    <th scope="col">unit</th>
+                    <th scope="col">Grade</th>
+                </tr>
+            </thead>
+            <tbody id="listBody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <button id="calculateGp" onclick="calculate()" class="float-right">Calculate Gp</button>
+
+
+    </div>
+    <script src="/javascripts/gp.js"></script>
+    {{!-- 
+
+      <div class="row gallery">
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book d-flex justify-content-center align-items-center">
+                  <h1>CPE301</h1>
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+                  <div class="book d-flex justify-content-center align-items-center">
+                     <h1>CPE306</h1>
+                  </div >
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+                <div class="book">
+                  <div class="book d-flex justify-content-center align-items-center">
+                     <h1>CSC301</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row gallery">
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row gallery">
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="thumbnail">
+               <div class="book">
+
+               </div>
+            </div>
+         </div>
+      </div> --}}
+</div>
