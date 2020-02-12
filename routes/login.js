@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 //post login page
 router.post('/', async (req, res) => {
   const { email, password } = req.body;
-  const loginUser = await User.findOne({ email: email })
+  const loginUser = await User.findOne({ email: email });
   if(!loginUser) {
     res.render('login', {
       message: 'Email is not registered. please proceed to signup'

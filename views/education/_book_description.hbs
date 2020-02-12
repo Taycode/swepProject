@@ -1,0 +1,73 @@
+<div class="sidenav">
+    <div class="image text-center mb-5">
+        <img src="/images/img_avatar.png" width="100px" />
+        <h5>{{user.firstname }} {{user.lastname}}</h5>
+    </div>
+    {{#each search_result}}
+    <div class="navcontent inactive">
+
+        <a href="/education/books/{{course_code}}">
+            <img src="/images/documents.png" width="40px">
+            <span class="ml-2">{{course_code}}</span>
+        </a>
+
+    </div>
+    {{/each}}
+    <div class="navcontent inactive logout mt-3">
+        <a href="/dashboard/logout">
+            <img src="/images/log-out.svg" width="40px">
+            <span class="ml-2">Logout</span>
+        </a>
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="detailed_header">
+            <h2>{{body.course_code}}</h2>
+            <p class="lead">Course Title - {{body.course_title}}</p>
+        </div>
+
+        <div class="course_description mt-4">
+            <h3>Course Description: </h3>
+            <p class="lead">
+                {{body.description}}
+            </p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Course Outline</h3>
+                <div class="outline">
+<!--                    <ul>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 2</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                        <li>Outline 1</li>-->
+<!--                    </ul>-->
+                    {{body.outline}}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Recommended Textbook</h3>
+                <div class="recommended_textbook">
+                    <ul>
+                        <li><a href="">Reverse Engineering For Beginners - By Dennis Yurichev</a></li>
+                        <li><a href="">Programming From The Ground Up - By Jonathan Bartlett</a></li>
+                        <li><a href="">Low Level Programming - By Igor Zhirkov</a></li>
+                        <li><a href="">PC Assembly Language - By Paul Carter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+</body>
